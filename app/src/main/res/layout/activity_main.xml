@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.monster.hotwordapplication.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_new_search_search"/>
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:hint="Search"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="#ccc"
+            android:textColorHint="#ccc"
+            android:textCursorDrawable="@null"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#656565"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Hot Search:"
+        android:textSize="18sp"/>
+
+    <com.monster.library.HotWordListView
+        android:id="@+id/search_hot_word_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:horizontal_gap="16dp"
+        app:vertical_gap="16dp"
+        android:padding="16dp"/>
+
+</LinearLayout>

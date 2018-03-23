@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HotWordListView">
+        <attr name="vertical_gap" format="dimension"></attr>
+        <attr name="horizontal_gap" format="dimension"></attr>
+    </declare-styleable>
+</resources>
