@@ -1,12 +1,22 @@
 # HotWordView
 a ui widget for hot word
 
-## example
+## How it looks
 ![](https://github.com/Monster-L/HotWordView/blob/master/device-2018-03-23-151110.png) 
 
-## ui widget
+## How to use
 
-```HotWordListView``` It's easy to use like Listview,show me code!
+```HotWordListView``` It's easy to use like Listview.
+
+you can set custom attributes as shown below:
+
+```xml
+<declare-styleable name="HotWordListView">
+        <attr name="vertical_gap" format="dimension"></attr>
+        <attr name="horizontal_gap" format="dimension"></attr>
+</declare-styleable>
+```
+a example:
 
 activity_main.xml:
 ```xml
@@ -18,6 +28,7 @@ activity_main.xml:
         app:vertical_gap="16dp"
         android:padding="16dp"/>
 ```
+
 MainActivity.java
 ```java
 public class MainActivity extends AppCompatActivity implements HotWordListView.OnItemClickListener{
@@ -102,3 +113,4 @@ class HotWordAdapter extends BaseAdapter {
         }
     }
 ```
+For more, please turn to the source code.
